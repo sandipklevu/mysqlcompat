@@ -1,0 +1,30 @@
+{
+    "name": "sandipklevu/module-mysqlcompat",
+    "description": "Klevu Search MySQL compatibility module from Magento 2.0 to Magento 2.3.x versions and Klevu Search < 2.3.4 version",
+    "require": {
+		"php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0|~7.3.0|~7.4.0",
+        "magento/framework": ">=100 <102",
+        "klevu/module-search": "~2.3.3"
+    },
+    "type": "magento-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+	"authors": [
+	    {
+			"name": "Klevu Oy",
+			"email": "niraj.aswani@klevu.com",
+			"homepage": "https://www.klevu.com/"
+		}
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Klevu\\MysqlCompat\\": ""
+        }
+    }
+}
